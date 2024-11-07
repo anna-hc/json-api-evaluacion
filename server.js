@@ -1,13 +1,12 @@
-const { exec } = require('child_process');
-const path = require('path');
+const jsonServer = require('json-server');
 
-const command = `npx json-server --watch ${path.join(__dirname, 'db.json')} --port 5000`;
+const server = jsonServer.create()
 
-exec(command, (error, stdout, stderr) => {
-  if (error) {
-    console.error(`exec error: ${error}`);
-    return;
-  }
-  console.log(`stdout: ${stdout}`);
-  console.error(`stderr: ${stderr}`);
-});
+const router = jsonServer.router('db.json')
+const middlewares = jsonServer.defaults()
+ 
+server.use(middlewares)
+server.use('/api', router)
+server.listen(process.env.PORT || 5000, () => {
+  console.log('JSON Server is running')
+})
