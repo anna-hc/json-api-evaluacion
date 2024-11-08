@@ -1,102 +1,318 @@
 {
-  "transactions": [
+  "usuarios": [
     {
-      "id": 1,
-      "date": "2019-12-01",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "amount": 1000
+      "id": "1",
+      "username": "Usuario1",
+      "password": "MiClav3",
+      "profesor": false,
+      "asignaturas": [
+        "APY4461-006D",
+        "MDY3131-004D",
+        "EAY4450-001D",
+        "MAT4140-004D",
+        "PGY4121-004D",
+        "ASY4131-004D"
+      ]
     },
     {
-      "id": 2,
-      "date": "2019-12-01",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
+      "id": "2",
+      "username": "Profe1",
+      "password": "MiClav3",
+      "profesor": true,
+      "asignaturas": [
+        "PGY4121-004D",
+        "PGY4121-001D",
+        "PGY4121-002D",
+        "PGY3121-002D"
+      ]
+    }
+  ],
+  "asignaturas": [
+    {
+      "id": "1",
+      "sigla": "APY4461",
+      "asignatura": "Proceso de Portafolio",
+      "profesor": "Victor Bazel",
+      "seccion": "006D"
     },
     {
-      "id": 3,
-      "date": "2019-12-02",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
+      "id": "2",
+      "sigla": "MDY3131",
+      "asignatura": "Programación de Base de Datos",
+      "profesor": "Hoffman Garuda",
+      "seccion": "004D"
     },
     {
-      "id": 4,
-      "date": "2019-12-04",
-      "description": "Sunglasses, Urban Outfitters",
-      "category": "Fashion",
-      "amount": -24.99
+      "id": "3",
+      "sigla": "EAY4450",
+      "asignatura": "Ética para el trabajo",
+      "profesor": "Robert Geuse",
+      "seccion": "001D"
     },
     {
-      "id": 5,
-      "date": "2019-12-06",
-      "description": "Venmo, Alice Pays you for Burrito",
-      "category": "Food",
-      "amount": 8.75
+      "id": "4",
+      "sigla": "MAT4140",
+      "asignatura": "Estadística",
+      "profesor": "Enrique Stygian",
+      "seccion": "004D"
     },
     {
-      "id": 6,
-      "date": "2019-12-06",
-      "description": "Chipotle",
-      "category": "Food",
-      "amount": -17.59
+      "id": "5",
+      "sigla": "PGY4121",
+      "asignatura": "Programación de aplicaciones móviles",
+      "profesor": "Patricio Yañez",
+      "seccion": "004D"
     },
     {
-      "id": 7,
-      "date": "2019-12-07",
-      "description": "Birthday Check from Grandma",
-      "category": "Gift",
-      "amount": 50
+      "id": "6",
+      "sigla": "PGY4121",
+      "asignatura": "Programación de aplicaciones móviles",
+      "profesor": "Patricio Yañez",
+      "seccion": "001D"
     },
     {
-      "id": 8,
-      "date": "2019-12-09",
-      "description": "Lyft Ride",
-      "category": "Transportation",
-      "amount": -13.25
+      "id": "7",
+      "sigla": "PGY4121",
+      "asignatura": "Programación de aplicaciones móviles",
+      "profesor": "Patricio Yañez",
+      "seccion": "002D"
     },
     {
-      "id": 9,
-      "date": "2019-12-11",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "amount": 1000
+      "id": "8",
+      "sigla": "PGY3121",
+      "asignatura": "Programación web",
+      "profesor": "Patricio Yañez",
+      "seccion": "002D"
     },
     {
-      "id": 10,
-      "date": "2019-12-16",
-      "description": "Tickets, Flatiron Multiplex Cinemas",
-      "category": "Entertainment",
-      "amount": -24
+      "id": "9",
+      "sigla": "ASY4131",
+      "asignatura": "Arquitectura",
+      "profesor": "José Luis Pino",
+      "seccion": "004D"
+    }
+  ],
+  "asistencias": [
+    {
+      "id": "6118",
+      "sigla": "APY4461",
+      "seccion": "006D",
+      "usuarioId": "1",
+      "fecha": "14/10/2024 Hora: 10:00:00"
     },
     {
-      "id": 11,
-      "date": "2019-12-16",
-      "description": "MTA Vending Machine: MetroCard",
-      "category": "Transportation",
-      "amount": -116.39
+      "id": "e29f",
+      "sigla": "ASY4131",
+      "seccion": "004D",
+      "usuarioId": "1",
+      "fecha": "31/10/2024 Hora: 13:40:00"
     },
     {
-      "id": 12,
-      "date": "2019-12-17",
-      "description": "Venmo, Pay Roommate for Rent",
-      "category": "Housing",
-      "amount": -975
+      "id": "2443",
+      "sigla": "MAT4140",
+      "seccion": "004D",
+      "usuarioId": "1",
+      "fecha": "01/11/2024 Hora: 10:10:00"
     },
     {
-      "date": "2022-07-09",
-      "description": "Office lunch",
-      "category": "Food",
-      "amount": "2000",
-      "id": 13
+      "id": "9b74",
+      "sigla": "EAY4450",
+      "seccion": "001D",
+      "usuarioId": "1",
+      "fecha": "01/11/2024 Hora: 08:10:00"
     },
     {
-      "date": "2022-07-09",
-      "description": "Office lunch Wednesday",
-      "category": "Food",
-      "amount": "3000",
-      "id": 14
+      "id": "73bd",
+      "sigla": "MDY3131",
+      "seccion": "004D",
+      "usuarioId": "1",
+      "fecha": "02/11/2024 Hora: 12:20:00"
+    },
+    {
+      "id": "fabb",
+      "sigla": "APY4461",
+      "seccion": "006D",
+      "usuarioId": "1",
+      "fecha": "02/11/2024 Hora: 10:30:02"
+    },
+    {
+      "id": "aa1f",
+      "sigla": "PGY3121",
+      "seccion": "002D",
+      "usuarioId": "1",
+      "fecha": "04/11/2024 Hora: 10:30:02"
+    },
+    {
+      "id": "su52",
+      "sigla": "PGY3121",
+      "seccion": "002D",
+      "usuarioId": "2",
+      "fecha": "04/11/2024 Hora: 10:30:00"
+    },
+    {
+      "id": "442f",
+      "sigla": "PGY4121",
+      "seccion": "001D",
+      "usuarioId": "1",
+      "fecha": "04/11/2024 Hora: 10:42:02"
+    },
+    {
+      "id": "618i",
+      "sigla": "PGY4121",
+      "seccion": "001D",
+      "usuarioId": "2",
+      "fecha": "04/11/2024 Hora: 10:42:00"
+    },
+    {
+      "id": "ead9",
+      "sigla": "PGY4121",
+      "seccion": "004D",
+      "usuarioId": "1",
+      "fecha": "04/11/2024 Hora: 19:22:02"
+    },
+    {
+      "id": "kxh4",
+      "sigla": "PGY4121",
+      "seccion": "004D",
+      "usuarioId": "2",
+      "fecha": "04/11/2024 Hora: 19:22:00"
+    },
+    {
+      "id": "5403",
+      "sigla": "PGY4121",
+      "seccion": "004D",
+      "usuarioId": "1",
+      "fecha": "04/11/2024 Hora: 20:01:19"
+    },
+    {
+      "id": "948e",
+      "sigla": "PGY4121",
+      "seccion": "004D",
+      "usuarioId": "2",
+      "fecha": "04/11/2024 Hora: 20:01:00"
+    },
+    {
+      "id": "a184",
+      "sigla": "PGY4121",
+      "seccion": "002D",
+      "usuarioId": "2",
+      "fecha": "04/11/2024 Hora: 21:03:00"
+    },
+    {
+      "id": "191f",
+      "sigla": "PGY4121",
+      "seccion": "002D",
+      "usuarioId": "2",
+      "fecha": "04/11/2024 Hora: 21:03:39"
+    }
+  ],
+  "horario": [
+    {
+      "id": "1",
+      "clases": [
+        {
+          "sigla": "EAY4450-001D",
+          "dias": [
+            "Sat"
+          ],
+          "hora": [
+            "10:41 - 11:20"
+          ]
+        },
+        {
+          "sigla": "ASY4131-004D",
+          "dias": [
+            "Mon",
+            "Tue"
+          ],
+          "hora": [
+            "9:11 - 10:40",
+            "9:11 - 10:40"
+          ]
+        },
+        {
+          "sigla": "PGY4121-004D",
+          "dias": [
+            "Mon",
+            "Tue"
+          ],
+          "hora": [
+            "10:41 - 12:10",
+            "10:41 - 12:10"
+          ]
+        },
+        {
+          "sigla": "MAT4140-004D",
+          "dias": [
+            "Wed",
+            "Fri"
+          ],
+          "hora": [
+            "10:41 - 12:10",
+            "9:11 - 10:40"
+          ]
+        },
+        {
+          "sigla": "MDY3131-004D",
+          "dias": [
+            "Wed",
+            "Thu"
+          ],
+          "hora": [
+            "12:11 - 13:40",
+            "9:11 - 10:40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "clases": [
+        {
+          "sigla": "PGY4121-001D",
+          "dias": [
+            "Mon",
+            "Tue"
+          ],
+          "hora": [
+            "9:11 - 10:40",
+            "9:11 - 10:40"
+          ]
+        },
+        {
+          "sigla": "PGY4121-004D",
+          "dias": [
+            "Mon",
+            "Tue"
+          ],
+          "hora": [
+            "10:41 - 12:10",
+            "10:41 - 12:10"
+          ]
+        },
+        {
+          "sigla": "PGY4121-002D",
+          "dias": [
+            "Wed",
+            "Thu"
+          ],
+          "hora": [
+            "10:41 - 12:10",
+            "9:11 - 10:40"
+          ]
+        },
+        {
+          "sigla": "PGY3121-002D",
+          "dias": [
+            "Fri",
+            "Sun"
+          ],
+          "hora": [
+            "9:11 - 10:40",
+            "10:41 - 11:20"
+          ]
+        }
+      ]
     }
   ]
 }
